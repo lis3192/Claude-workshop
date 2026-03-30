@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're In! | LumosPath Workshop</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --midnight: #1B1F3B;
+  --spark: #A6E3E9;
+  --spark-dk: #5CB8C4;
+  --spark-soft: rgba(166,227,233,0.12);
+  --glow: #F6EFE9;
+  --gold: #E0C285;
+  --white: #FFFFFF;
+  --body: #6B7280;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;color:var(--midnight);background:var(--glow);-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+.accent-stripe{height:5px;background:linear-gradient(90deg,var(--spark-dk) 0%,var(--gold) 55%,transparent 100%)}
+.site-hdr{background:var(--midnight);padding:16px 0}
+.site-hdr .wrap{display:flex;justify-content:center;align-items:center}
+.wrap{max-width:680px;margin:0 auto;padding:0 24px}
+.logo{font-family:'Fredoka',sans-serif;font-size:22px;text-decoration:none}
+.logo .l{color:var(--spark);font-weight:400}.logo .p{color:var(--white);font-weight:600}
+
+.main{flex:1;display:flex;align-items:center;justify-content:center;padding:60px 24px}
+.card{background:var(--white);border-radius:20px;padding:52px 44px;text-align:center;max-width:600px;width:100%;box-shadow:0 8px 40px rgba(27,31,59,0.06)}
+.check{width:72px;height:72px;border-radius:50%;background:var(--spark-soft);border:2px solid var(--spark);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:32px;color:var(--spark-dk)}
+.card h1{font-family:'Fredoka',sans-serif;font-size:clamp(28px,4vw,38px);font-weight:600;color:var(--midnight);margin-bottom:8px}
+.card h1 em{font-style:normal;color:var(--spark-dk)}
+.card .sub{font-size:16px;color:var(--body);line-height:1.6;margin-bottom:32px}
+
+.details-box{background:var(--glow);border-radius:14px;padding:24px 28px;text-align:left;margin-bottom:28px}
+.details-box h3{font-family:'Fredoka',sans-serif;font-size:16px;font-weight:500;color:var(--midnight);margin-bottom:14px}
+.detail-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(27,31,59,0.06);font-size:14px}
+.detail-row:last-child{border-bottom:none}
+.detail-label{color:var(--body);font-weight:500}
+.detail-value{color:var(--midnight);font-weight:600}
+
+.next-steps{text-align:left;margin-bottom:28px}
+.next-steps h3{font-family:'Fredoka',sans-serif;font-size:16px;font-weight:500;color:var(--midnight);margin-bottom:12px}
+.step{display:flex;gap:12px;align-items:flex-start;padding:8px 0}
+.step-num{width:24px;height:24px;border-radius:50%;background:var(--spark-soft);border:1.5px solid var(--spark-dk);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--spark-dk);flex-shrink:0;margin-top:1px}
+.step p{font-size:14px;color:var(--body);line-height:1.55}
+.step p b{color:var(--midnight)}
+
+.card .note{font-size:13px;color:var(--body);line-height:1.6;padding-top:20px;border-top:1px solid rgba(27,31,59,0.08)}
+
+.site-ftr{background:var(--midnight);padding:24px 0;text-align:center}
+.site-ftr p{font-size:12px;color:rgba(255,255,255,0.35)}
+.site-ftr a{color:var(--spark);text-decoration:none}
+
+@keyframes popIn{from{opacity:0;transform:scale(0.9) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.card{animation:popIn 0.5s ease forwards}
+</style>
+</head>
+<body>
+
+<div class="accent-stripe"></div>
+<header class="site-hdr">
+  <div class="wrap">
+    <a class="logo" href="#"><span class="l">Lumos</span><span class="p">Path</span></a>
+  </div>
+</header>
+
+<div class="main">
+  <div class="card">
+    <div class="check">✓</div>
+    <h1>You're <em>in!</em></h1>
+    <p class="sub">Your spot is locked in. Check your email for a confirmation and the Zoom link. I'm so glad you're joining.</p>
+
+    <div class="details-box">
+      <h3>Workshop details</h3>
+      <div class="detail-row">
+        <span class="detail-label">Workshop</span>
+        <span class="detail-value">Everyone's Talking About Claude</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Date</span>
+        <span class="detail-value">Wednesday 29 April 2026</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Time</span>
+        <span class="detail-value">7:00 PM AEST</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Duration</span>
+        <span class="detail-value">90 minutes</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Format</span>
+        <span class="detail-value">Live on Zoom + Replay</span>
+      </div>
+    </div>
+
+    <div class="next-steps">
+      <h3>What happens next</h3>
+      <div class="step">
+        <div class="step-num">1</div>
+        <p><b>Check your email.</b> You'll get a confirmation with the Zoom link and calendar invite.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <p><b>Add it to your calendar.</b> Wednesday 29 April, 7:00 PM AEST. Set a reminder so you don't forget.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <p><b>Show up with questions.</b> This is live and interactive. The more you bring, the more you'll leave with.</p>
+      </div>
+    </div>
+
+    <p class="note">Can't make it live? No stress. The full replay and your Claude Implementation Pack will be sent to you within 24 hours of the session.</p>
+  </div>
+</div>
+
+<footer class="site-ftr">
+  <p>&copy; 2026 <a href="#">LumosPath</a></p>
+</footer>
+
+</body>
+</html>
