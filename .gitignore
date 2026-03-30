@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# Cache
+.cache/
+.vercel/
+.parcel-cache/
+
+# Environment
+.env
+.env*.local
+
+# OS
+.DS_Store
+Thumbs.db
